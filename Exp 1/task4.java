@@ -27,5 +27,11 @@ public class StudentInfo
         System.out.print("Age: " + age);
         System.out.print("Phone: " + phone);
         System.out.print("Average: " + avg);
+
+        public static void main(String[]args)
+        {
+            Q2 obj = new Q2();
+            Eligible student = obj.new Eligible();
+        }
     }
 }
