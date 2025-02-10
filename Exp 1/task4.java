@@ -1,37 +1,37 @@
 import java.util.Scanner;
 
-public class StudentInfo
-{
-    public static void main(String[]args)
-    {
+public class task4 {
+    
+    public void mainf() {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter ur name: ");
+        System.out.println("Enter your name: ");
         String name = sc.nextLine();
 
-        System.out.print("Enter age: ");
+        System.out.println("Enter age: ");
         int age = sc.nextInt();
 
-        System.out.print("Enter phone no.: ");
+        System.out.println("Enter phone no.: ");
         long phone = sc.nextLong();
 
-        System.out.print("Enter marks 1: ");
+        System.out.println("Enter marks 1: ");
         int marks1 = sc.nextInt();
 
-        System.out.print("Enter marks 2: ");
+        System.out.println("Enter marks 2: ");
         int marks2 = sc.nextInt();
 
         double avg = (marks1 + marks2) / 2.0;
 
-        System.out.print("Name: " + name);
-        System.out.print("Age: " + age);
-        System.out.print("Phone: " + phone);
-        System.out.print("Average: " + avg);
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Phone: " + phone);
+        System.out.println("Average: " + avg);
 
-        public static void main(String[]args)
-        {
-            Q2 obj = new Q2();
-            Eligible student = obj.new Eligible();
-        }
+        sc.close();
+    }
+
+    public static void main(String[] args) {
+        task4 obj = new task4(); // Creating an object of Task4
+        obj.mainf(); // Calling the function
     }
 }
