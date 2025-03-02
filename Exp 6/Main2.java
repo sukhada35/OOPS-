@@ -1,7 +1,6 @@
 // WAP to create an abstract class called MobileRechargePlan with attributes like planName, planAmount, and validityDays alongside abstract methods displayPlanDetails() and //calculateRechargeAmount(double talkTime). Further, create two concrete classes as prepaidRecharge and PostpaidRecharge extending the MobileRechargePlan class, provide methods for display //the plan details, and calculate the recharge amount methods. Instantiate both the classes and display their respective plan details along with calculate recharge amounts. 
 // [Hint: use the abstract class, constructor, super and this keyword]
 
-
 import java.util.Scanner;
 
 abstract class MobileRechargePlan 
@@ -52,7 +51,7 @@ class postpaidRecharge extends MobileRechargePlan {
     public void displayPlanDetails() {
         System.out.println("Postpaid Recharge Plan");
         System.out.println("Plan Name: " + planName);
-        System.out.println("Monthly Rental: ₹" + planAmount);
+        System.out.println("Monthly Rental: " + planAmount);
         System.out.println("Validity: " + validityDays + " days");
     }
 
@@ -87,7 +86,7 @@ public class Main2
         // Taking input for Postpaid Plan
         System.out.print("\nEnter Postpaid Plan Name: ");
         String postpaidName = sc.nextLine();
-        System.out.print("Enter Postpaid Monthly Rental: ₹");
+        System.out.print("Enter Postpaid Monthly Rental: ");
         double postpaidAmount = sc.nextDouble();
         System.out.print("Enter Postpaid Plan Validity (days): ");
         int postpaidValidity = sc.nextInt();
