@@ -1,3 +1,6 @@
+// Define an interface for shapes and implement it in classes like Circle and Rectangle.
+// [Hint: use the abstract class, interface, constructor]
+
 import java.util.Scanner;
 
 interface Shape 
@@ -26,7 +29,7 @@ abstract class AbstractShape implements Shape
 class Circle extends AbstractShape 
 {
     double radius;
-
+    
     // Constructor
     public Circle(double radius) 
   {
@@ -36,7 +39,7 @@ class Circle extends AbstractShape
 
     // Implement calculateArea() from Shape interface
     public double calculateArea() 
-  {
+    {
         return Math.PI * radius * radius;
     }
 }
@@ -81,3 +84,6 @@ public class Main1
         sc.close();
     }
 }
+
+
+
