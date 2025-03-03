@@ -19,6 +19,7 @@ class student
 
 	System.out.print("Enter date of birth (DD/MM/YYYY): ");
         dob = sc.nextLine();
+		
     }
 }
 
