@@ -1,64 +1,41 @@
-// Create a class “Person” with fields “name” and “age” and a method “display()” that prints the name and age of the person.
-// Create a subclass “Employee” that extends “Person” and adds a field “salary” and a method “display_Emp()” that prints the name, age, and salary of the employee.
-// Create a subclass “Manager” that extends “Employee” and adds a field “department” and a method “display_Manager()” that prints the name, age, salary, and department of the manager.
-// Create an object of the “Employee” class and call the “display () and display_Emp()” method.
-// Create an object of the “Manager” class and call the “display () and display_Manager ()” method.
-
+ //3. Create a class “Vehicle” with a method “drive ()” that displays a message “Driving a vehicle”. 
+ //Create two subclasses “Car” and “Bike” that extend “Vehicle” and implement the
+//“drive_car ()” and “drive_bike ()” method to display “Driving a car” and “Driving a bike” respectively.
 import java.util.Scanner;
-class person
+
+class Vehicle
 {
-    String name;
-    int age;
-
-    public void display()
+    public void drive()
     {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter your name: ");
-        name = sc.nextLine();
-
-        System.out.print("Enter your age: ");
-        age = sc.nextInt();
+        System.out.print("Driving a vehicle.");
     }
 }
-class Employee extends person
+class Car extends Vehicle
 {
-    int salary;
-    
-    public void display_Emp()
+    public void drive_car()
     {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter yor salary: ");
-        salary = sc.nextInt();
-        System.out.print("Name: " + name);
-        System.out.print("Age: " + age);
-        System.out.print("Salary: " + salary);
+        System.out.print("Driving a car.");
+    }
+}
+class Bike extends Vehicle
+{
+    public void drive_bike()
+    {
+        System.out.print("Driving a bike.");
     }
 }
 
-class Manager extends Employee
-{
-    String department;
-    public void display_Manager()
-    {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter your department: ");
-        department = sc.nextLine(); 
-        System.out.print("Name: " + name);
-        System.out.print("Age: " + age);
-        System.out.print("Salary: " + salary);
-        System.out.print("Department: " + department);
-    }
-}
 class pracforexp5
 {
     public static void main(String[] args)
     {
+        Vehicle vc = new Vehicle(); 
+        vc.drive();
 
-        Employee em = new Employee();
-        em.display();
-        em.display_Emp();
-        Manager mg = new Manager();
-        mg.display();
-        mg.display_Manager();
+        Car cr = new Car(); 
+        cr.drive_car();
+
+        Bike bk = new Bike(); 
+        bk.drive_bike(); 
     }
 }
