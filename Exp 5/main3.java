@@ -12,6 +12,7 @@ class Vehicle
 }
 class Car extends Vehicle
 {
+    @Override
     public void drive_car()
     {
         System.out.print("Driving a car.");
@@ -19,13 +20,14 @@ class Car extends Vehicle
 }
 class Bike extends Vehicle
 {
+    @Override
     public void drive_bike()
     {
         System.out.print("Driving a bike.");
     }
 }
 
-class pracforexp5
+public class main3
 {
     public static void main(String[] args)
     {
