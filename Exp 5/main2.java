@@ -6,34 +6,89 @@
 
 import java.util.Scanner;
 
-class Person
-{
+class Person {
     String name;
     int age;
 
-    public void display()
-    {
-	Scanner sc = new Scanner(System.in);
-	
-	System.out.println("Enter your name: ");
-	name = sc.nextLine();
+    // Constructor
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
-	System.out.println("Enter your age: ");
-	age = sc.nextInt();
+    // Display method
+    public void display() {
+        System.out.println("\n🔹 Person Details 🔹");
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
     }
 }
 
-class Employee extends Person
-{
+class Employee extends Person {
     int salary;
-    System.out.println("Enter your salary: ");
-    salary = sc.nextInt();
-    class void display_Emp()
-    {
-	System.out.println("Name:" + name);
-	System.out.println("Age:" + age);
-	System.out.println("Salary:" + salary);
+
+    // Constructor using super
+    public Employee(String name, int age, int salary) {
+        super(name, age); // Calls the constructor of Person
+        this.salary = salary;
+    }
+
+    // Display Employee details
+    public void display_Emp() {
+        super.display(); // Call Person's display method
+        System.out.println("Salary: ₹" + salary);
+    }
+}
+class Manager extends Employee {
+    String department;
+
+    // Constructor using super
+    public Manager(String name, int age, int salary, String department) {
+        super(name, age, salary); // Calls the constructor of Employee
+        this.department = department;
+    }
+
+    // Display Manager details
+    public void display_Manager() {
+        super.display_Emp(); // Call Employee's display method
+        System.out.println("Department: " + department);
     }
 }
 
-class 
+public class pracforexp5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Taking input for Employee
+        System.out.print("Enter Employee Name: ");
+        String empName = sc.nextLine();
+        System.out.print("Enter Employee Age: ");
+        int empAge = sc.nextInt();
+        System.out.print("Enter Employee Salary: ₹");
+        int empSalary = sc.nextInt();
+        sc.nextLine(); // Consume newline
+
+        // Creating Employee Object
+        Employee emp = new Employee(empName, empAge, empSalary);
+        emp.display();
+        emp.display_Emp();
+
+        // Taking input for Manager
+        System.out.print("\nEnter Manager Name: ");
+        String mgrName = sc.nextLine();
+        System.out.print("Enter Manager Age: ");
+        int mgrAge = sc.nextInt();
+        System.out.print("Enter Manager Salary: ₹");
+        int mgrSalary = sc.nextInt();
+        sc.nextLine(); // Consume newline
+        System.out.print("Enter Manager Department: ");
+        String mgrDept = sc.nextLine();
+
+        // Creating Manager Object
+        Manager mgr = new Manager(mgrName, mgrAge, mgrSalary, mgrDept);
+        mgr.display();
+        mgr.display_Manager();
+
+        sc.close(); // Close Scanner
+    }
+}
