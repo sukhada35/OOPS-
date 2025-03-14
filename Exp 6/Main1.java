@@ -32,7 +32,7 @@ class Circle extends AbstractShape
     
     // Constructor
     public Circle(double radius) 
-  {
+    {
         super("Circle"); // Call AbstractShape constructor
         this.radius = radius;
     }
@@ -44,11 +44,13 @@ class Circle extends AbstractShape
     }
 }
 
-class Rectangle extends AbstractShape {
+class Rectangle extends AbstractShape 
+{
     double length, width;
 
     // Constructor
-    public Rectangle(double length, double width) {
+    public Rectangle(double length, double width) 
+    {
         super("Rectangle"); // Call AbstractShape constructor
         this.length = length;
         this.width = width;
@@ -56,7 +58,7 @@ class Rectangle extends AbstractShape {
 
     // Implement calculateArea() from Shape interface
     public double calculateArea() 
-  {
+    {
         return length * width;
     }
 }
@@ -64,7 +66,7 @@ class Rectangle extends AbstractShape {
 public class Main1 
 {
     public static void main(String[] args)
-  {
+    {
         Scanner sc = new Scanner(System.in);
 
         // Input for Circle

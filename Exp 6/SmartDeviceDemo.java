@@ -10,7 +10,8 @@ interface BluetoothEnabled {
     void unpairDevice();
 }
 
-class SmartSpeaker implements WiFiEnabled, BluetoothEnabled {
+class SmartSpeaker implements WiFiEnabled, BluetoothEnabled 
+{
     private String connectedWiFi = null;
     private String pairedDevice = null;
 

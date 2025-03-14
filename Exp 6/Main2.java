@@ -1,4 +1,8 @@
-// WAP to create an abstract class called MobileRechargePlan with attributes like planName, planAmount, and validityDays alongside abstract methods displayPlanDetails() and //calculateRechargeAmount(double talkTime). Further, create two concrete classes as prepaidRecharge and PostpaidRecharge extending the MobileRechargePlan class, provide methods for display //the plan details, and calculate the recharge amount methods. Instantiate both the classes and display their respective plan details along with calculate recharge amounts. 
+// WAP to create an abstract class called MobileRechargePlan with attributes like planName, planAmount,
+// and validityDays alongside abstract methods displayPlanDetails() and calculateRechargeAmount(double talkTime).
+// Further, create two concrete classes as prepaidRecharge and PostpaidRecharge extending the MobileRechargePlan class, 
+//provide methods for display //the plan details, and calculate the recharge amount methods. Instantiate both the classes and display 
+//their respective plan details along with calculate recharge amounts. 
 // [Hint: use the abstract class, constructor, super and this keyword]
 
 import java.util.Scanner;
@@ -29,10 +33,10 @@ class prepaidRecharge extends MobileRechargePlan
 
     public void displayPlanDetails()
     {
-	System.out.println("Prepaid Recharge Plan");
-	System.out.println("Plan Name: " + planName);
-	System.out.println("Amount: " + planAmount);
-	System.out.println("Validity: " + validityDays + " days");	
+        System.out.println("Prepaid Recharge Plan");
+        System.out.println("Plan Name: " + planName);
+        System.out.println("Amount: " + planAmount);
+        System.out.println("Validity: " + validityDays + " days");	
     }
 
     public double calculateRechargeAmount(double talkTime) 
@@ -41,8 +45,8 @@ class prepaidRecharge extends MobileRechargePlan
     }
 }
 
-class postpaidRecharge extends MobileRechargePlan {
-
+class postpaidRecharge extends MobileRechargePlan 
+{
     public postpaidRecharge(String planName, double planAmount, int validityDays) 
     {
         super(planName, planAmount, validityDays);
