@@ -1,3 +1,8 @@
+// A class “student” defines student with data members name, roll number and date of birth and methods as Inputdata().
+//  Inputdata() accepts the input for instance variable. Derived the class “marks” from class “student” defines marks of various subjects, 
+//  total percentage and grade of the student and methods as readdata() reads the marks out of 100, compute() calculates the percentage and 
+//  assigns the grades accordingly, show() displays the name, roll number and date of birth, marks in various subjects, total, percentage and grade.
+
 import java.util.Scanner;
 
 class student
