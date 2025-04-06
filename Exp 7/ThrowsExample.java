@@ -15,7 +15,8 @@ public class ThrowsExample {
             String message = readInput();
             System.out.println("You entered: " + message);
         } 
-        catch (IOException e) {
+        catch (IOException e) 
+        {
             System.out.println("Error reading input: " + e.getMessage());
         } 
         finally {
