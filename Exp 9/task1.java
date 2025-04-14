@@ -1,3 +1,5 @@
+//1. Write a Java program to demonstrate basic CRUD (Create, Read, Update, Delete) operations on a list 
+// using the methods provided by the List interface. 
 import java.util.*;
 
 public class task1 {
