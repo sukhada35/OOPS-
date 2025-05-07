@@ -1,5 +1,5 @@
-import java.util.LinkedList;
-
+// import java.util.LinkedList;
+import java.util.*; 
 public class task6 {
 
     public static void main(String[] args) {
@@ -15,9 +15,9 @@ public class task6 {
 
         // Traversing the LinkedList using the for-each loop
         System.out.println("LinkedList elements:");
-        for (String fruit : list) {
+        for (String i : list) {
             // The for-each loop automatically retrieves each element in the list
-            System.out.println(fruit);
+            System.out.println(i);
         }
     }
 }

@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.awt.event.*;
-
 public class task7 {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Submit/Cancel Form");

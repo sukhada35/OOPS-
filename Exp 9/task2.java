@@ -16,5 +16,6 @@ public class task2 {
 
         // Displaying the set
         System.out.println("Unique Names: " + uniqueNames);
+        
     }
 }

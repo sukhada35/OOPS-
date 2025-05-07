@@ -17,7 +17,7 @@ public class task1 {
         System.out.println("Original List: " + students);
 
         // Update
-        students.set(10, "Ash"); 
+        students.set(1, "Ash"); 
         System.out.println("After Update: " + students);
 
         // Delete

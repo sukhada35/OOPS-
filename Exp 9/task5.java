@@ -1,9 +1,9 @@
 // 5.	Write a Java program to demonstrate the use of the LinkedList class in the Java Collection 
 // Framework and traverse it using an Iterator. 
 
-import java.util.LinkedList;
-import java.util.Iterator;
-
+// import java.util.LinkedList;
+// import java.util.Iterator;
+import java.util.*; 
 public class task5 {
 
     public static void main(String[] args) {
@@ -23,9 +23,7 @@ public class task5 {
         // Traversing the LinkedList using the Iterator
         System.out.println("LinkedList elements:");
         while (iterator.hasNext()) {
-            // Using the iterator's next() method to get the next element
-            String fruit = iterator.next();
-            System.out.println(fruit);
+            System.out.println(iterator.next());
         }
     }
 }
