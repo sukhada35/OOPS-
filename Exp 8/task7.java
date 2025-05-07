@@ -1,3 +1,4 @@
+// This program creates a simple GUI with two buttons: "SUBMIT" and "CANCEL".
 import javax.swing.*;
 import java.awt.event.*;
 public class task7 {

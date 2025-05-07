@@ -7,7 +7,7 @@ public class task4 {
         JFrame frame = new JFrame("Fahrenheit to Celsius");
         frame.setSize(350, 200);
         frame.setLayout(null);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //useless ig
 
         JLabel label1 = new JLabel("Fahrenheit:");
         label1.setBounds(30, 30, 100, 30);
@@ -29,7 +29,7 @@ public class task4 {
             public void actionPerformed(ActionEvent e) {
                 try {
                     double f = Double.parseDouble(fahrenheitField.getText());
-                    double c = (f - 32) * 5 / 9;
+                    double c = (f - 32) * 5 / 9; // f = (c * 9 / 5) + 32
                     resultLabel.setText("Celsius: " + String.format("%.2f", c));
                 } catch (Exception ex) {
                     resultLabel.setText("Invalid input! Enter a number.");

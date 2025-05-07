@@ -18,7 +18,7 @@ class Person {
 
     // Display method
     public void display() {
-        System.out.println("\n🔹 Person Details 🔹");
+        System.out.println("\n Person Details");
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
     }

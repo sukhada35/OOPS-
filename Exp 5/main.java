@@ -107,11 +107,11 @@ public class main
 {
     public static void main(String[] args)
     {
-	marks student = new marks();
-	student.Inputdata();
-	student.readdata();
-	student.compute();
-	student.show();
+	marks stu = new marks();
+	stu.Inputdata();
+	stu.readdata();
+	stu.compute();
+	stu.show();
     }
 }
 

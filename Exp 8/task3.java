@@ -9,7 +9,7 @@ public class task3 {
         JFrame frame = new JFrame("Button Click Example");
         frame.setSize(300, 200);
         frame.setLayout(null);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //should work without ig
 
         JLabel label = new JLabel("Click a button!");
         label.setBounds(90, 20, 150, 30);
@@ -23,8 +23,10 @@ public class task3 {
         button2.setBounds(160, 70, 100, 30);
         frame.add(button2);
 
-        button1.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
+        button1.addActionListener(new ActionListener() 
+        {
+            public void actionPerformed(ActionEvent e) 
+            {
                 label.setText("Button-1 clicked.");
             }
         });
@@ -36,5 +38,6 @@ public class task3 {
         });
 
         frame.setVisible(true);
+        
     }
 }
