@@ -3,7 +3,6 @@
 //2.	If the index is out of bounds for an array of size 5, throw an array index out of bounds exception.
 //3.	If there is an attempt to divide by zero when performing an operation, throw an arithmetic exception.
 
-
 import java.util.Scanner;
 
 public class task4ka3 

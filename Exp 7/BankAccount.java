@@ -1,3 +1,7 @@
+// 5.	Write a banking program where the user can deposit and withdraw money from their account.
+// Create a custom exception InsufficientBalanceException to handle cases where the withdrawal 
+// amount is greater than the available balance. 
+// The program should also ensure that the deposit amount is not negative.
 import java.util.Scanner;
 
 // Custom exception for insufficient balance

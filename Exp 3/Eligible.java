@@ -5,7 +5,7 @@
 
 import java.util.Scanner;
 
-class Eligible 
+public class Eligible
 {
     int classHeld;
     int classAttended;
